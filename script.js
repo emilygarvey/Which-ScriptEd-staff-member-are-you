@@ -2,6 +2,7 @@ $(".submit").click(function() {
     var color = $(".color").val();
     var object = $(".object").val();
     $(".start").hide();
+    $(".reset").show();
     
     if (color === "black" && object === "1") {
         $(".resultsText").text("You are Riley!");

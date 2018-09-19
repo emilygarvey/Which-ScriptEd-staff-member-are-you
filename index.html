@@ -28,7 +28,9 @@ input {
     margin: 5px 10px 30px 10px;
 }
 
-</style></head>
+.reset {
+    display: none;
+}</style></head>
     <body>
         <h1>Which ScriptEd staff member are you?</h1>
         <div class="start">
@@ -64,6 +66,7 @@ $(".submit").click(function() {
     var color = $(".color").val();
     var object = $(".object").val();
     $(".start").hide();
+    $(".reset").show();
     
     if (color === "black" && object === "1") {
         $(".resultsText").text("You are Riley!");
